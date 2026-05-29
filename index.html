@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O equilíbrio perfeito entre a produção e a preservação ambiental</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>🚜 Produção Inteligente</h2>
+            <p>Uso de drones, sensores IoT e agricultura de precisão para evitar o desperdício de água e insumos.</p>
+        </section>
+
+        <section class="card">
+            <h2>🌱 Sustentabilidade Prática</h2>
+            <p>Técnicas como plantio direto, rotação de culturas e recuperação do solo mantêm o ecossistema vivo.</p>
+        </section>
+
+        <section class="card">
+            <h2>💧 Preservação dos Recursos</h2>
+            <p>Proteção de nascentes, captação de água da chuva e fontes de energia limpa (solar e eólica) nas fazendas.</p>
+        </section>
+
+        <!-- Seção Interativa do Simulador -->
+        <section class="simulador">
+            <h2>🧮 Simulador de Economia de Água</h2>
+            <p>Veja quantos litros de água a irrigação inteligente economiza por hectare:</p>
+            <input type="number" id="hectares" placeholder="Digite a quantidade de hectares (Ex: 5)" min="1">
+            <button onclick="calcularEconomia()">Calcular Impacto</button>
+            <div id="resultado" class="resultado-oculto"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
