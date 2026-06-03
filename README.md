@@ -1,1 +1,1 @@
-# AGRINHO-2026
+# AGRINHO-2026 Este site apresenta a importância do reflorestamento e da preservação ambiental de forma simples e interativa. Ele mostra informações sobre os benefícios das árvores para a biodiversidade, a proteção do meio ambiente e o combate ao aquecimento global. Além disso, possui uma calculadora que permite ao usuário informar quantas árvores pretende plantar e descobrir uma estimativa da quantidade de dióxido de carbono (CO₂) que poderá ser absorvida por ano, incentivando a conscientização ambiental e ações sustentáveis.
