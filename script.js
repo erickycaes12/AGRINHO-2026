@@ -1,25 +1,26 @@
-function calcularEconomia() {
-    // Pega o valor digitado pelo usuário
-    const hectaresInput = document.getElementById('hectares').value;
-    const resultadoDiv = document.getElementById('resultado');
+function calcularImpacto() {
 
-    // CORRIGIDO: Agora valida se o campo está vazio OU se o número é menor ou igual a zero (<= 0)
-    if (hectaresInput === '' || hectaresInput <= 0) {
-        resultadoDiv.innerHTML = "❌ Por favor, insira um número válido de hectares.";
-        resultadoDiv.className = "sucesso"; 
-        resultadoDiv.style.color = "#c62828";
-        resultadoDiv.style.backgroundColor = "#ffebee";
-        resultadoDiv.style.border = "1px solid #ef5350";
-        return;
-    }
+```
+const quantidade = Number(
+    document.getElementById("arvores").value
+);
 
-    // Média estimada de economia: 15.000 litros de água por hectare/mês com tecnologia irrigação eficiente
-    const litrosEconomizados = hectaresInput * 15000;
+const resultado = document.getElementById("resultado");
 
-    // Exibe o resultado na tela de forma amigável
-    resultadoDiv.className = "sucesso";
-    resultadoDiv.style.color = "#256029";
-    resultadoDiv.style.backgroundColor = "#c8e6c9";
-    resultadoDiv.style.border = "1px solid #81c784";
-    resultadoDiv.innerHTML = `🌱 Ao utilizar tecnologia de irrigação inteligente em sua fazenda, você deixará de desperdiçar aproximadamente <strong>${litrosEconomizados.toLocaleString('pt-BR')} litros</strong> de água por mês!`;
+if (quantidade <= 0 || isNaN(quantidade)) {
+    resultado.innerHTML =
+        "❌ Digite uma quantidade válida de árvores.";
+    resultado.style.color = "red";
+    return;
+}
+
+// Média aproximada: 22 kg de CO₂ por árvore ao ano
+const co2 = quantidade * 22;
+
+resultado.innerHTML =
+    `🌳 ${quantidade} árvores podem absorver aproximadamente <strong>${co2} kg de CO₂ por ano</strong>!`;
+
+resultado.style.color = "#1b5e20";
+```
+
 }

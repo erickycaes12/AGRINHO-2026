@@ -1,111 +1,77 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f7f4;
-    color: #333;
-    /* Adicionado para o rodapé não cobrir o conteúdo */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f2f7f2;
+color: #333;
 }
 
 header {
-    background-color: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 2rem;
+background: #2e7d32;
+color: white;
+text-align: center;
+padding: 30px;
 }
 
 main {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 2rem;
-    flex: 1; /* Garante que o conteúdo empurre o rodapé para baixo */
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px;
 }
 
 .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin: 1rem;
-    padding: 1.5rem;
-    width: 30%;
-    min-width: 250px;
-    border-top: 5px solid #81c784;
-    box-sizing: border-box;
+background: white;
+width: 300px;
+margin: 15px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-h2 {
-    color: #1b5e20;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #3e2723;
-    color: white;
-    /* CORRIGIDO: Removido o 'fixed' para o rodapé ficar no fim da página de forma natural */
-    width: 100%;
-    box-sizing: border-box;
+.card h2 {
+color: #1b5e20;
 }
 
 .simulador {
-    background: #e8f5e9;
-    border: 2px dashed #81c784;
-    border-radius: 8px;
-    padding: 2rem;
-    width: 100%; /* Melhorado para se ajustar ao layout */
-    max-width: 600px;
-    margin: 2rem auto;
-    text-align: center;
-    box-sizing: border-box;
+width: 100%;
+max-width: 600px;
+background: #e8f5e9;
+margin-top: 20px;
+padding: 25px;
+border-radius: 10px;
+text-align: center;
 }
 
-.simulador input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 80%; /* Ajustado para caber melhor em telas de celular */
-    max-width: 300px;
-    margin-bottom: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+input {
+width: 80%;
+padding: 10px;
+margin: 10px 0;
+font-size: 16px;
 }
 
-.simulador button {
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.1s;
+button {
+background: #2e7d32;
+color: white;
+border: none;
+padding: 12px 20px;
+cursor: pointer;
+border-radius: 5px;
 }
 
-.simulador button:hover {
-    background-color: #1b5e20;
-}
-
-.simulador button:active {
-    transform: scale(0.98); /* Efeito visual de clique no botão */
+button:hover {
+background: #1b5e20;
 }
 
 #resultado {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: all 0.3s ease-in-out; /* Animação suave ao exibir o resultado */
+margin-top: 20px;
+font-weight: bold;
+font-size: 18px;
 }
 
-.sucesso {
-    background-color: #c8e6c9;
-    color: #256029;
-    border: 1px solid #81c784;
+footer {
+background: #3e2723;
+color: white;
+text-align: center;
+padding: 15px;
+margin-top: 20px;
 }
